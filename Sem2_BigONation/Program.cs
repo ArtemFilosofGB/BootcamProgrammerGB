@@ -84,6 +84,7 @@ Console.WriteLine($"Slow => {sw.ElapsedMilliseconds} milliseconds");
 
 
 Console.WriteLine("Fast");
+sw.Reset();
 sw.Start();
 PrintMatrixInt(MultiplyTableFast(9));
 sw.Stop();
